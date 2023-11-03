@@ -1,107 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfólio @ Beto Torres</title>
-  </head>
-  <body>
-    <header class="header-container">
-      <div class="header">
-        <div class="checkbox-container">
-          <div class="checkbox-wrapper">
-            <input type="checkbox" id="toggle" />
-            <label class="checkbox" for="toggle">
-              <div class="trace"></div>
-              <div class="trace"></div>
-              <div class="trace"></div>
-            </label>
-            <div class="menu"></div>
-            <nav class="menu-items">
-              <ul>
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="#">Sobre</a>
-                </li>
-                <li>
-                  <a href="#">Projetos</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <h1>Beto Torres</h1>
-      <h2>Front-web Developer</h2>
-      <div class="social-media">
-        <a href="">Linkedin</a>
-        <a href="https://capb1981.github.io/">Github</a>
-      </div>
-    </header>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <main class="container">
-      <div class="card-container">
-        <div class="card">
-          <div class="card-wrapper">
-            <h2>Projeto 1</h2>
-            <p>Vem ver</p>
-          </div>
-        </div>
-        <div class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius
-          duis at consectetur lorem donec massa sapien faucibus et. Mauris
-          ultrices eros in cursus turpis massa tincidunt dui ut. Lacus
-          vestibulum sed arcu non odio euismod lacinia at. Massa placerat duis
-          ultricies lacus. Cursus euismod quis viverra nibh. Orci ac auctor
-          augue mauris. Cursus euismod quis viverra nibh cras. In nulla posuere
-          sollicitudin aliquam. Sit amet facilisis magna etiam tempor orci eu
-          lobortis.
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-wrapper">
-            <h2>Projeto 2</h2>
-            <p>Vem ver</p>
-          </div>
-        </div>
-        <div class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius
-          duis at consectetur lorem donec massa sapien faucibus et. Mauris
-          ultrices eros in cursus turpis massa tincidunt dui ut. Lacus
-          vestibulum sed arcu non odio euismod lacinia at. Massa placerat duis
-          ultricies lacus. Cursus euismod quis viverra nibh. Orci ac auctor
-          augue mauris. Cursus euismod quis viverra nibh cras. In nulla posuere
-          sollicitudin aliquam. Sit amet facilisis magna etiam tempor orci eu
-          lobortis.
-        </div>
-      </div>
-      <div class="card-container">
-        <div class="card">
-          <div class="card-wrapper">
-            <h2>Projeto 3</h2>
-            <p>Vem ver</p>
-          </div>
-        </div>
-        <div class="card-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius
-          duis at consectetur lorem donec massa sapien faucibus et. Mauris
-          ultrices eros in cursus turpis massa tincidunt dui ut. Lacus
-          vestibulum sed arcu non odio euismod lacinia at. Massa placerat duis
-          ultricies lacus. Cursus euismod quis viverra nibh. Orci ac auctor
-          augue mauris. Cursus euismod quis viverra nibh cras. In nulla posuere
-          sollicitudin aliquam. Sit amet facilisis magna etiam tempor orci eu
-          lobortis.
-        </div>
-      </div>
-    </main>
+    <title>Alura MIDI</title>
 
-    <footer class="footer">@Beto Torres 2023</footer>
-  </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">    
+
+</head>
+<body>
+
+    <h1>Alura Midi</h1>
+
+    <section class="teclado">
+        <button class="tecla tecla_pom">Pom</button>
+        <button class="tecla tecla_clap">Clap</button>
+        <button class="tecla tecla_tim">Tim</button>
+
+        <button class="tecla tecla_puff">Puff</button>
+        <button class="tecla tecla_splash">Splash</button>
+        <button class="tecla tecla_toim">Toim</button>
+
+        <button class="tecla tecla_psh">Psh</button>
+        <button class="tecla tecla_tic">Tic</button>
+        <button class="tecla tecla_tom">Tom</button>
+    </section>
+
+    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+
+
+    <script src="main.js"></script>
+
+</body>
 </html>
